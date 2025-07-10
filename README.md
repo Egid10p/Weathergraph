@@ -69,7 +69,7 @@ When executed:
 
   ```python
   from weather_api.weather_connector import WeatherConnector
-  from data_manager.data_saver      import DataSaver
+  from data_manager.data_saver import DataSaver
 
   prefs = {"city": "Roma", "country": "Italia"}
   loc   = f"{prefs['city']}, {prefs['country']}"
@@ -83,8 +83,7 @@ This minimal workflow lets you start collecting weather data and saving it witho
 
 ```text
 Weathergraph/
-├── app/
-│   └── main.py               # Main program entry point
+├── main.py                   # Main program entry point
 ├── data/
 │   └── data.xlsx             # Automatically generated Excel file with historical weather data
 ├── data_manager/
